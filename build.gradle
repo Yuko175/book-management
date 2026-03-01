@@ -68,7 +68,7 @@ jooq {
                 includes = ".*"
             }
             target {
-                packageName = "org.example.db"
+                packageName = "io.github.gonzily1269"
             }
 
         }
