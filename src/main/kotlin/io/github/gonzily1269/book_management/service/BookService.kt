@@ -21,7 +21,7 @@ import org.springframework.transaction.annotation.Transactional
 @Transactional
 class BookService(
     private val bookRepository: BookRepository,
-    
+
     @Value("\${error.book.published-cannot-unpublish}")
     private val publishedCannotUnpublish: String
 ) {
@@ -77,6 +77,5 @@ class BookService(
             request.authorIds
         )
     }
-
 }
 

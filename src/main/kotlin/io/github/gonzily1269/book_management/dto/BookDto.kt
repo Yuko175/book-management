@@ -71,4 +71,3 @@ data class BookUpdateRequest(
     @field:NotEmpty(message = "\${validation.book.authorIds.not-empty}")
     val authorIds: List<Int>
 )
-

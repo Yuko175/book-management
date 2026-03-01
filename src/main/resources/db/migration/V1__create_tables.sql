@@ -1,8 +1,8 @@
 CREATE TABLE book (
-      id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-      title TEXT NOT NULL,
-      price INTEGER NOT NULL,
-      publication_status TEXT NOT NULL
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    title TEXT NOT NULL,
+    price INTEGER NOT NULL,
+    publication_status TEXT NOT NULL
 );
 
 CREATE TABLE author (
