@@ -82,7 +82,7 @@ book-management/
 1. リポジトリをクローン
 
 ```bash
-git clone https://github.com/gonzily1269/book-management.git
+git clone https://github.com/gonzily1269/book-management
 cd book-management
 ```
 
@@ -193,8 +193,16 @@ Content-Type: application/json
   "price": 3500,
   "publicationStatus": "出版済み",
   "authorIds": [
-    1,
-    2
+    {
+      "id": 1,
+      "name": "山田 太郎",
+      "birthDate": "1980-01-15"
+    },
+    {
+      "id": 2,
+      "name": "佐藤 花子",
+      "birthDate": "1985-06-20"
+    }
   ]
 }
 ```
@@ -222,9 +230,21 @@ Content-Type: application/json
   "price": 4500,
   "publicationStatus": "出版済み",
   "authorIds": [
-    1,
-    2,
-    3
+    {
+      "id": 1,
+      "name": "山田 太郎",
+      "birthDate": "1980-01-15"
+    },
+    {
+      "id": 2,
+      "name": "佐藤 花子",
+      "birthDate": "1985-06-20"
+    },
+    {
+      "id": 3,
+      "name": "田中 次郎",
+      "birthDate": "1990-03-01"
+    }
   ]
 }
 ```
